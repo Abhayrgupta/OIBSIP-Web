@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+<div class="header">
+  <a href="#" class="logo">Mahendra Singh Dhoni</a>
+  <div class="header-right">
+    <a class="active" href="#">Home</a>
+    <a href="#">About</a>
+  </div>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade-in">
+  
+  <img src="1.jpg" style="width:100%">
+  <div class="text"><div class="content">
+			<h4>Mahendra Singh Dhoni</h4>
+			<h1><span>Captain</span> Cool</h1>
+			<div class="newslatter">
+			</div>
+		</div></div>
+</div>
+
+<div class="mySlides fade-in">
+  
+  <img src="2.jpg" style="width:100%">
+  <div class="text"><div class="content">
+			
+			<div class="newslatter">
+			</div>
+		</div></div>
+</div>
+
+<div class="mySlides fade-in">
+  
+  <img src="3.jpg" style="width:100%">
+  <div class="text"><div class="content">
+			
+			<div class="newslatter">
+			</div>
+		</div></div>
+</div>
+<div class="mySlides fade-in">
+  
+  <img src="4.jpg" style="width:100%">
+  <div class="text"><div class="content">
+			
+			<div class="newslatter">
+			</div>
+		</div></div>
+</div>
+<div class="mySlides fade-in">
+  
+	<img src="5.jpg" style="width:100%">
+	<div class="text"><div class="content">
+			  
+			  <div class="newslatter">
+			  </div>
+		  </div></div>
+  </div>
+
+</div>
+
+
+<div class="hidden" style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Change image every 10 seconds
+}
+</script>
+
+<section class="about">
+		<div class="main">
+			<img src="8.jpeg">
+			<div class="about-text">
+				<h2>About Mahi</h2>
+				<h5><span>Indian Professional</span>Cricketer</h5>
+				<p>Mahendra Singh Dhoni is an Indian Cricketer.
+				   Under the captaincy of him, India won th T20 World Cup 2007,World Cup 2011, and Champions Trophy 2013.
+				   He is the man who made India proud of winning several trophies.
+				   He is also called by names such as MSD, MS, Captain Cool, and Mahi.
+				   He is considered the best captain ever in history of Indian Cricket.
+				   On 15 August 2020, he took retirement fron international cricket.
+				</p>
+			</div>
+		</div>
+	</section>
+	
+<div class="service">
+		<div class="title">
+			<h2>M.S. Dhoni</h2>
+			<p>Dhoni made his international debut in 2004. His talent with the bat came to the fore in an innings of 148 runs against Pakistan in his fifth international match. Within a year he joined the India Test team, where he quickly established himself with a century (100 or more runs in a single innings) against Pakistan. Despite his inexperience, Dhoni took over the captaincy of the one-day side in 2007 and led India to the Twenty20 (T20) world title. Series wins over Australia and Sri Lanka, among others, moved India to the top of the International Cricket Council (ICC) Test rankings for the first time in December 2009. Dhoni was honoured for his play with the ICC One Day International Player of the Year Award in 2008 and 2009. In the 2011 one-day World Cup, Dhoni’s dashing innings of 91 not out—in front of a home crowd in Mumbai—paved the way for India’s victory over Sri Lanka in the final. He also led India to an appearance in the semifinals of the 2015 Cricket World Cup. Dhoni stopped serving as India’s captain in 2017, having led his country in 331 international matches, the most for a captain in the sport’s history. Three years later he retired from international competition.</p>
+		</div>
+        <section class="about2">
+			<div class="main">
+				<img src="6.jpeg">
+				<div class="about-text">
+					
+					<p>The explosion of T20 cricket on the Indian subcontinent paved the way for the formation of the Indian Premier League (IPL) in 2008. In the league’s inaugural season, Dhoni signed with the Chennai Super Kings for $1.5 million, which at the time was the largest contract in the IPL. He subsequently led the team to two consecutive titles (2010, 2011). The Super Kings franchise earned a two-season suspension from the IRL in 2016 for its role in a match-fixing scandal, and Dhoni then joined the Rising Pune Supergiant. In 2018 he returned to the Chennai Super Kings, and the team won the IPL championship that year and in 2021.
+
+						Dhoni’s life was the subject of the hit Bollywood film M.S. Dhoni: The Untold Story (2016).
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="about3">
+			<div class="main">
+				<img src="7.jpeg">
+			</div>
+		</section>
+	</div>
+
+	
+
+</body>
+</html> 
